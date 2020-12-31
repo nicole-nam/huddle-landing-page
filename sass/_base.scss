@@ -1,0 +1,35 @@
+//VARIABLES
+
+$color-primary: hsl(257, 40%, 49%);
+$color-secondary: hsl(300, 69%, 71%);
+
+$font-main: "Poppins", sans-serif;
+$font-sub: "Open Sans", sans-serif;
+
+//BREAK POINTS
+
+$bp-large: 90em; //1440px
+
+//STYLE
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //10px
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  background-image: url("../images/bg-mobile.svg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: $color-primary;
+}

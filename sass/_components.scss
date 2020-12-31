@@ -1,0 +1,47 @@
+//TYPOGRAPHY
+.heading-primary {
+  text-align: center;
+
+  &--main {
+    display: inline-block;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #fff;
+
+    padding-bottom: 3rem;
+  }
+
+  &--sub {
+    font-family: $font-sub;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+//CTA BUTTON
+
+.btn {
+  display: inline-block;
+  color: $color-primary;
+  padding: 1rem 9rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 .3rem .3rem rgba(#000,.4);
+  margin-top: 3rem;
+  cursor: pointer;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+
+//ICONS
+
+.fab {
+width: 1rem;
+padding-left: .1rem;
+}
