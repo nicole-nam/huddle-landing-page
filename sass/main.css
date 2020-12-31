@@ -9,6 +9,13 @@
 
 html {
   font-size: 62.5%;
+  position: relative;
+}
+
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 87.5%;
+  }
 }
 
 body {
@@ -22,15 +29,33 @@ body {
   background-color: #674baf;
 }
 
+@media only screen and (min-width: 90em) {
+  body {
+    width: 90em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
 .heading-primary {
   text-align: center;
 }
 
+@media only screen and (min-width: 90em) {
+  .heading-primary {
+    text-align: initial;
+    padding: 0 5rem;
+  }
+}
+
 .heading-primary--main {
-  display: inline-block;
+  display: block;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #fff;
   padding-bottom: 3rem;
 }
@@ -38,7 +63,7 @@ body {
 .heading-primary--sub {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
 }
 
@@ -55,6 +80,8 @@ body {
 }
 
 .btn:link, .btn:visited {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
 }
@@ -64,8 +91,24 @@ body {
   padding-left: .1rem;
 }
 
+@media only screen and (min-width: 90em) {
+  .main-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
 .header__logo {
   width: 40%;
+}
+
+@media only screen and (min-width: 90em) {
+  .header__logo {
+    width: 20%;
+  }
 }
 
 .section__hero-image {
@@ -76,6 +119,24 @@ body {
 
 .section-cta {
   text-align: center;
+}
+
+@media only screen and (min-width: 90em) {
+  .section-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer__icon-list {
