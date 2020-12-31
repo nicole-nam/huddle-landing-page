@@ -38,12 +38,6 @@ body {
   background-color: $color-primary;
 
   @media only screen and (min-width: $bp-large) {
-    // width: 90em;
-    // position: absolute;
-    // top: 0;
-    // left: 50%;
-    // transform: translate(-50%);
-
     background-image: url("../images/bg-desktop.svg");
   }
 }
